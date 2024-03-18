@@ -1,0 +1,84 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Забезпечує розтягування тіла сторінки на всю висоту вікна */
+    display: flex;
+    flex-direction: column; /* Встановлюємо стовпчасту розкладку */
+}
+
+header, footer, nav, main, article, aside, section {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex-shrink: 0; /* Забороняємо флекс-елементам зменшувати свої розміри */
+}
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header:hover {
+    display: block; /* Встановлюємо властивість display у значення block, щоб показати картинку */
+    position: fixed; /* Встановлюємо позицію на fixed, щоб картинка була зафіксована на екрані */
+    top: 0; /* Розміщуємо картинку зверху */
+    left: 0; /* Розміщуємо картинку зліва */
+    width: 100%; /* Розтягуємо картинку по ширині вікна перегляду */
+    height: 100%; /* Розтягуємо картинку по висоті вікна перегляду */
+    z-index: 2; /* Встановлюємо величину z-index, щоб картинка була найвищого порядку */
+}
+
+
+h1 {
+    z-index: 3;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333; /* Колір фону навігаційного меню */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Застосовуємо flexbox */
+    justify-content: space-around; /* Рівномірно розподіляє пункти по горизонталі */
+    background-color: #333; /* Колір фону навігаційного меню */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Заборона стандартного підкреслення для посилань */
+    color: white; /* Колір тексту посилань */
+    background-color: #333; /* Колір фону посилань */
+    padding: 10px 15px; /* Запобігаємо накладенню вмісту на фон */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Колір фону посилань при наведенні курсора миші */
+}
+
+
+/* Main styles */
+main {
+    display: flex;
+    flex: 1; /* Займає всю доступну висоту, відступаючи від верхнього і нижнього країв */
+}
+
+article, aside {
+    flex: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-top: auto; /* Встановлюємо верхній марджин на автоматично, щоб футер був прикріплений до нижнього краю сторінки */
+}

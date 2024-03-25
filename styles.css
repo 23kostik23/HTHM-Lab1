@@ -1,21 +1,19 @@
-/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Забезпечує розтягування тіла сторінки на всю висоту вікна */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Встановлюємо стовпчасту розкладку */
+    flex-direction: column; 
     background: linear-gradient(to right, #183717c8, #7b1c25)
 }
 
 header, footer, nav, main, article, aside, section {
     margin: 10px;
     padding: 10px;
-    flex-shrink: 0; /* Забороняємо флекс-елементам зменшувати свої розміри */
+    flex-shrink: 0; 
 }
 
-/* Header styles */
 header {
     background-color: #f0f0f0;
     text-align: center;
@@ -43,23 +41,22 @@ header:hover .img-container img {
     margin: 0;
     top: 446px;
     left: 45%;
-    color: rgb(255, 255, 255); /* Встановлюємо колір тексту */
-    text-align: center; /* Центруємо текст горизонтально */
-    z-index: 999; /* Забезпечуємо, що текст буде вище зображення */
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    z-index: 999; 
 
 }
 
-/* Navigation styles */
 nav {
-    background-color: #333; /* Колір фону навігаційного меню */
+    background-color: #333; 
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Застосовуємо flexbox */
-    justify-content: space-around; /* Рівномірно розподіляє пункти по горизонталі */
-    background-color: #333; /* Колір фону навігаційного меню */
+    display: flex; 
+    justify-content: space-around; 
+    background-color: #333; 
 }
 
 nav ul li {
@@ -68,34 +65,45 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Заборона стандартного підкреслення для посилань */
-    color: white; /* Колір тексту посилань */
+    text-decoration: none;  
+    color: white; 
     font-size: large;
-    background-color: #333; /* Колір фону посилань */
-    padding: 10px 15px; /* Запобігаємо накладенню вмісту на фон */
+    background-color: #333; 
+    padding: 10px 15px; 
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Колір фону посилань при наведенні курсора миші */
+    background-color: #555; /
 }
 
 
-/* Main styles */
 main {
     display: flex;
-    flex: 1; /* Займає всю доступну висоту, відступаючи від верхнього і нижнього країв */
+    flex: 1;
+}
+.FavHeroes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.FavHeroes img {
+    border-radius: 30px;
 }
 
 article, aside {
     flex: 1;
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Додаємо тінь */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
-/* Footer styles */
 footer {
     background-color: #f0f0f0;
     text-align: center;
-    margin-top: auto; /* Встановлюємо верхній марджин на автоматично, щоб футер був прикріплений до нижнього краю сторінки */
+    margin-top: auto; 
 }

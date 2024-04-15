@@ -81,7 +81,7 @@ main {
     display: flex;
     flex: 1;
 }
-.FavHeroes {
+.fav-heroes {
     display: grid;
     grid-template-rows: repeat(2, 1fr); 
     grid-template-columns: repeat(2, 1fr); 
@@ -106,4 +106,19 @@ footer {
     background-color: #f0f0f0;
     text-align: center;
     margin-top: auto; 
+}
+
+.deforming-element {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deforming-element:hover {
+    transform: scaleX(2) scaleY(0.5);
 }

@@ -2,7 +2,8 @@
 <html>
     <head title="Laboratory 1">
         <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -47,7 +48,7 @@
     <h2 style="margin: 20px;">Frame example: </h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wQ9oCG5joFU?si=JsRqLmmFHJWFfkoR&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <h2>Форма з використанням елементів datetime, email, tel, url</h2>
-    <form id="myForm" action="#" method="post">
+    <form id="my-form" action="#" method="post">
         <label for="date">Дата і час:</label><br>
         <input type="datetime-local" id="date" name="date" required><br><br>
     
@@ -62,6 +63,7 @@
     
         <input type="submit" value="Submit">
     </form>
+    <div class="deforming-element" id="deformingElement"></div>
         <footer>
             <p>
                 Footer footer 
@@ -70,7 +72,7 @@
             </p>
         </footer>
         <script>
-            document.getElementById("myForm").addEventListener("submit", function(event) {
+            document.getElementById("my-form").addEventListener("submit", function(event) {
                 event.preventDefault(); 
                 var date = document.getElementById("date").value;
                 var email = document.getElementById("email").value;
